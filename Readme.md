@@ -6,7 +6,9 @@ Team Members
 [Rohit kumar yadav]  
 [Mayank shrivastav]  
 [Lakshay] 
+
 Project Overview
+
 The GymWebsite project aims to create an intuitive and user-friendly platform for gym enthusiasts. The website will feature:
 
 Home Page: Introduction and highlights of the gym.
@@ -29,7 +31,3 @@ This project is licensed under the MIT License.
 Contact
 For any questions or suggestions, please reach out to:
 
-[Member 1 Name] - [Email]
-[Member 2 Name] - [Email]
-[Member 3 Name] - [Email]
-[Member 4 Name] - [Email]
