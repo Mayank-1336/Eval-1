@@ -343,7 +343,7 @@ img {
   justify-items: center;
 }
 .logos__img{
-  width:120p
+  width:120px;
 }
 
 /*=============== PROGRAM ===============*/
@@ -390,7 +390,7 @@ img {
   justify-self: flex-end;
   margin-top: 1.5rem;
   font-size: 1.25rem;
-  color: var(--title-color-black);
+  color: var(--title-color);
   opacity: 0;
   transition: opacity .4s;
 }
@@ -463,11 +463,11 @@ img {
 }
 .choose__triangle-2{
   width: 205px;
-  background-color: var(--first-color-dark);
+  background-color: var(--first-color-alt);
 }
 .choose__triangle-3{
   width: 105px;
-  background-color: var(--first-color-alt);
+  background-color: var(--first-color-dark);
 }
 .choose__img{
   width: 260px;
@@ -530,7 +530,7 @@ img {
   font-size: 1.25rem;
   color: var(--first-color);
 }
-.priting__item-opacity{
+.pricing__item-opacity{
   opacity: .3;
 }
 
@@ -557,39 +557,6 @@ img {
 .pricing_card-active .pricing_item{
   color: var(--title-color-black);
 }
-/*=============== GOOGLE FONTS ===============*/
-@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Red+Hat+Display:wght@400;700;900&display=swap");
-
-/*=============== VARIABLES CSS ===============*/
-:root {
-  --header-height: 3.5rem;
-  
-  /*========== Colors ==========*/
-  /*Color mode HSL(hue, saturation, lightness)*/
-  --first-color: hsl(79, 72%, 55%);
-  --first-color-light: hsl(79, 97%, 77%);
-  --first-color-alt: hsl(79, 67%, 52%);
-  --first-color-dark: hsl(79, 63%, 50%);
-  --first-color-gray: hsl(79, 6%, 64%);
-  --title-color: hsl(180, 4%, 98%);
-  --title-color-black: hsl(180, 4%, 12%);
-  --text-color: hsl(180, 4%, 72%);
-  --text-color-light: hsl(180, 4%, 65%);
-  --body-color: hsl(180, 12%, 8%);
-
-  /*========== Font and typography ==========*/
-  /*.5rem = 8px | 1rem = 16px ...*/
-  --body-font: 'Red Hat Display', sans-serif;
-  --second-font: 'Kaushan Script', cursive;
-  --biggest-font-size: 2rem;
-  --bigger-font-size: 1.5rem;
-  --big-font-size: 1.25rem;
-  --h1-font-size: 1.5rem;
-  --h2-font-size: 1.25rem;
-  --h3-font-size: 1rem;
-  --normal-font-size: .938rem;
-  --small-font-size: .813rem;
-  --smaller-font-size: .75rem;
 /*=========== BREAKPOINTS ===========*/
 /* For small devices */
 @media screen and (max-width: 340px){
