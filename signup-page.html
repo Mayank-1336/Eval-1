@@ -206,7 +206,7 @@
         .container.sign-up .text.sign-up p,
         .container.sign-up .img.sign-up img {
             transform: translateX(0);
-        } 
+        }
 
         /* BACKGROUND */
 
@@ -349,7 +349,7 @@
                     <div class="form sign-up">
                         <div class="input-group">
                             <i class='fas fa-user'></i>
-                            <input type="text" placeholder="Enter Username">
+                            <input type="text" placeholder="Enter Name">
                         </div>
                         <div class="input-group">
                             <i class='fas fa-envelope'></i>
@@ -365,33 +365,25 @@
                             <b onclick="toggle()" class="pointer">Sign in here</b>
                         </p>
                     </div>
-                    <!-- <div class="social-list align-items-center sign-up">
-                        <div class="align-items-center facebook-bg">
-                            <i class="fab fa-facebook-f"></i>
-                        </div>
-                        <div class="align-items-center google-bg">
-                            <i class="fab fa-google"></i>
-                        </div>
-                        <div class="align-items-center twitter-bg">
-                            <i class="fab fa-twitter"></i>
-                        </div>
-                    </div> -->
                 </div>
             </div>
             <!-- END SIGN UP -->
+
             <!-- SIGN IN -->
             <div class="col align-items-center flex-col sign-in">
                 <div class="form-wrapper align-items-center">
                     <div class="form sign-in">
                         <div class="input-group">
                             <i class='fas fa-user'></i>
-                            <input type="text" placeholder="Enter Username">
+                            <input type="text" id="username" placeholder="Enter Username">
                         </div>
                         <div class="input-group">
                             <i class='fas fa-lock'></i>
-                            <input type="password" placeholder="Enter Password">
+                            <input type="password" id="password" placeholder="Enter Password">
                         </div>
-                        <button>Sign In</button>
+                        <!-- <a href="GymWebsite.html"> -->
+                        <button id="signInBtn">Sign In</button>
+                        <!-- </a> -->
                         <p>
                             <b>Forgot password?</b>
                         </p>
@@ -400,17 +392,6 @@
                             <b onclick="toggle()" class="pointer">Sign up here</b>
                         </p>
                     </div>
-                    <!-- <div class="social-list align-items-center sign-in">
-                        <div class="align-items-center facebook-bg">
-                            <i class="fab fa-facebook-f"></i>
-                        </div>
-                        <div class="align-items-center google-bg">
-                            <i class="fab fa-google"></i>
-                        </div>
-                        <div class="align-items-center twitter-bg">
-                            <i class="fab fa-twitter"></i>
-                        </div>
-                    </div> -->
                 </div>
             </div>
             <!-- END SIGN IN -->
@@ -425,9 +406,6 @@
                     <h2>Welcome to FitLife</h2>
                     <p>Your fitness journey starts here.</p>
                 </div>
-                <!-- <div class="img sign-in">
-                    <img src="" alt="Gym">
-                </div> -->
             </div>
             <!-- END SIGN IN CONTENT -->
 
@@ -446,17 +424,31 @@
         <!-- END CONTENT SECTION -->
     </div>
 
-   <script>
-        let container = document.getElementById('container')
+    <script>
+        const container = document.getElementById('container');
 
-        toggle = () => {
-            container.classList.toggle('sign-in')
-            container.classList.toggle('sign-up')
+        // Toggle between Sign In and Sign Up forms
+        function toggle() {
+            container.classList.toggle('sign-in');
+            container.classList.toggle('sign-up');
         }
 
+        // Automatically show the Sign In form after a short delay
         setTimeout(() => {
-            container.classList.add('sign-in')
-        }, 200)
+            container.classList.add('sign-in');
+        }, 200);
+
+        document.getElementById('signInBtn').addEventListener('click', function () {
+            // Correct ID references
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            if (username === "admin" && password === "1111") {
+                // Redirect to the main page if login is successful
+                window.location.href = "GymWebsite.html"; 
+            } else {
+                alert("Invalid credentials! Please try again.");
+            }
+        });
     </script>
 </body>
 
