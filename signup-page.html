@@ -7,9 +7,10 @@
     <title>Gym Sign-Up</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <style>
+        /* Your existing CSS styles */
         :root {
-            --primary-color: #FF6F61;
-            --secondary-color: #FF8A65;
+            --primary-color: rgba(5, 105, 5, 0.726);
+            --secondary-color: rgba(2, 54, 2, 0.852);
             --black: #000000;
             --white: #ffffff;
             --gray: #efefef;
@@ -359,7 +360,7 @@
                             <i class='fas fa-lock'></i>
                             <input type="password" placeholder="Enter Password">
                         </div>
-                        <button>Sign Up</button>
+                        <button id="signUpBtn">Sign Up</button>
                         <p>
                             <span>Already have an account?</span>
                             <b onclick="toggle()" class="pointer">Sign in here</b>
@@ -381,11 +382,9 @@
                             <i class='fas fa-lock'></i>
                             <input type="password" id="password" placeholder="Enter Password">
                         </div>
-                        <!-- <a href="GymWebsite.html"> -->
                         <button id="signInBtn">Sign In</button>
-                        <!-- </a> -->
                         <p>
-                            <b>Forgot password?</b>
+                            <button id="forgotPasswordButton" style="border: none; background: none; color: #2d72d9; cursor: pointer;">Forgot password?</button>
                         </p>
                         <p>
                             <span>Don't have an account?</span>
@@ -411,9 +410,9 @@
 
             <!-- SIGN UP CONTENT -->
             <div class="col align-items-center flex-col sign-up">
-                <div class="img sign-up">
+                <!-- <div class="img sign-up">
                     <img src="https://www.example.com/gym-sign-up.jpg" alt="Join Gym">
-                </div>
+                </div> -->
                 <div class="text sign-up">
                     <h2>Join the FitLife Community</h2>
                     <p>Sign up and get ready to sweat!</p>
@@ -436,7 +435,7 @@
         // Automatically show the Sign In form after a short delay
         setTimeout(() => {
             container.classList.add('sign-in');
-        }, 200);
+        }, 10);
 
         document.getElementById('signInBtn').addEventListener('click', function () {
             // Correct ID references
@@ -448,6 +447,25 @@
             } else {
                 alert("Invalid credentials! Please try again.");
             }
+        });
+
+        document.getElementById('forgotPasswordButton').addEventListener('click', function() {
+            // Prompt user for email address
+            const email = prompt("Please enter your email address to receive a new password:");
+
+            // Check if email is provided
+            if (email) {
+                // Simulate sending a new password
+                alert(`A new password has been sent to ${email}`);
+            } else {
+                alert('Please enter a valid email address.');
+            }
+        });
+
+        document.getElementById('signUpBtn').addEventListener('click', function () {
+            // Simulate a successful sign-up
+            // Redirect to the main page after sign-up
+            window.location.href = "GymWebsite.html"; 
         });
     </script>
 </body>
