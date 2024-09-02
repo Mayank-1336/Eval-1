@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Gym Name</title>
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #000; /* Black background */
+            color: #fff; /* White text */
+            line-height: 1.6;
+        }
+
+        h1, h2, h3 {
+            color: #32CD32; /* Green color for headings */
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header Section */
+        .header {
+            background-image: url('gym-background.jpg'); /* Add a suitable background image */
+            background-size: cover;
+            background-position: center;
+            padding: 100px 20px;
+            text-align: center;
+            color: #fff;
+        }
+
+        .header h1 {
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+
+        .header p {
+            font-size: 20px;
+            max-width: 600px;
+            margin: 0 auto;
+            margin-bottom: 30px;
+        }
+
+        .header button {
+            background-color: #32CD32;
+            color: #000;
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .header button:hover {
+            background-color: #28a745;
+        }
+
+        /* About Section */
+        .about-section {
+            text-align: center;
+            padding: 60px 20px;
+            background-color: #111; /* Darker background for contrast */
+            border-bottom: 5px solid #32CD32; /* Green underline */
+        }
+
+        .about-section p {
+            max-width: 700px;
+            margin: 20px auto;
+            font-size: 18px;
+        }
+
+        /* Mission Section */
+        .mission-section {
+            text-align: center;
+            padding: 60px 20px;
+            background-color: #000; /* Black background */
+        }
+
+        .mission-section p {
+            max-width: 700px;
+            margin: 20px auto;
+            font-size: 18px;
+        }
+
+        /* Team Section */
+        .team-section {
+            padding: 60px 20px;
+            background-color: #111; /* Darker background for contrast */
+        }
+
+        .team-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .team-member {
+            background-color: #000; /* Black background */
+            border: 2px solid #32CD32; /* Green border */
+            border-radius: 10px;
+            padding: 20px;
+            width: calc(25% - 20px); /* Four items per row with gap */
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .team-member:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px #32CD32;
+        }
+
+        .team-member img {
+            width: 100%;
+            height: auto;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            border: 3px solid #32CD32; /* Green border for image */
+        }
+
+        .team-member h3 {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .team-member p {
+            color: #aaa; /* Light gray for member details */
+            font-size: 14px;
+        }
+
+        /* Social Media Icons */
+        .social-media {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .social-media a {
+            color: #32CD32; /* Green color for icons */
+            margin: 0 10px;
+            font-size: 24px;
+            transition: color 0.3s;
+        }
+
+        .social-media a:hover {
+            color: #28a745;
+        }
+
+        /* Footer Section */
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #000;
+            color: #aaa;
+            border-top: 2px solid #32CD32; /* Green top border */
+            margin-top: 40px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .team-member {
+                width: calc(50% - 20px); /* Two items per row on smaller screens */
+            }
+
+            .header h1 {
+                font-size: 40px;
+            }
+
+            .header p {
+                font-size: 18px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .team-member {
+                width: 100%; /* Single item per row on very small screens */
+            }
+
+            .header h1 {
+                font-size: 32px;
+            }
+
+            .header p {
+                font-size: 16px;
+            }
+        }
+    </style>
+    <!-- Add Font Awesome for social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <div class="header">
+            <h1>Welcome to Fit life</h1>
+            <p>Your journey to a healthier, fitter life starts here. Join us and transform your fitness journey with the best training programs and community support.</p>
+            <button onclick="window.location.href='GymWebsite.html'">Join Now</button>
+        </div>
+
+        <!-- About Section -->
+        <div class="about-section">
+            <h1>About Us</h1>
+            <p>At <strong>Fit Life</strong>, we are dedicated to empowering individuals to achieve their fitness goals through dedication, perseverance, and a community-driven approach. Our state-of-the-art facility is designed to provide a welcoming environment where everyone from beginners to advanced athletes can thrive.</p>
+        </div>
+
+        <!-- Mission Section -->
+        <div class="mission-section">
+            <h2>Our Mission</h2>
+            <p>Our mission is to inspire and support our members in their journey toward better health and wellness. We aim to provide the best training programs, expert guidance, and a welcoming atmosphere where fitness is a way of life.</p>
+        </div>
+
+        <!-- Team Section -->
+        <div class="team-section">
+            <h2>Meet Our Team</h2>
+            <div class="team-container">
+                <div class="team-member">
+                    <img src="member1.jpg" alt="Team Member 1">
+                    <h3>Ritesh Basnal</h3>
+                   </div>
+                <div class="team-member">
+                    <img src="member2.jpg" alt="Team Member 2">
+                    <h3>Rohit Kumar Yadav</h3>
+                </div>
+                <div class="team-member">
+                    <img src="member3.jpg" alt="Team Member 3">
+                    <h3>Mayank Srivastava</h3>
+                   </div>
+                <div class="team-member">
+                    <img src="member4.jpg" alt="Team Member 4">
+                    <h3>Lakshay</h3>
+                    </div>
+            </div>
+        </div>
+
+        <!-- Social Media Icons -->
+        <div class="social-media">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+
+        <!-- Footer Section -->
+        <div class="footer">
+            <p>&copy; 2024 Gym Name. All Rights Reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
