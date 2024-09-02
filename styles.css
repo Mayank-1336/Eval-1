@@ -842,26 +842,26 @@ img {
   }
 }
 
-.footer__container{
+.footer__container {
     row-gap: 4rem;
     padding-top: 1rem;
 }
 
 .footer__logo,
-.footer__description{
+.footer__description {
     color: var(--title-color);
 }
 
 .footer__logo,
 .footer__form,
-.footer__social{
+.footer__social {
     display: flex;
 }
 
-.footer__logo{
+.footer__logo {
     align-items: center;
     column-gap: .5rem;
-    font-weight: var(--title-color);
+    font-weight: var(--font-bold);
     margin-bottom: 1.5rem;
 }
 
@@ -869,63 +869,63 @@ img {
     width: 1.5rem;
 }
 
-.footer__description{
+.footer__description {
     margin-bottom: 2rem;
 }
 
-.footer__form{
+.footer__form {
     flex-direction: column;
     gap: 1.25rem;
 }
 
-.footer__input{
-    padding: 20px 56px 20px 20px;
+.footer__input {
+    padding: 20px 56px 20px 24px;
     border: 2px solid var(--first-color-light);
     background: transparent;
-    color:var(--text-color);
+    color: var(--text-color);
     outline: none;
 }
 
 .footer__content,
-.footer.links,
-.footer__group{
+.footer__links,
+.footer__group {
     display: grid;
 }
 
-.footer__content{
-    grid-template-columns: repeat(2, max-context);
+.footer__content {
+    grid-template-columns: repeat(2, max-content);
     gap: 2.5rem 3.5rem;
 }
 
-.footer__title{
+.footer__title {
     font-size: var(--h3-font-size);
     margin-bottom: 1.5rem;
 }
 
-footer__link{
+.footer__links {
     row-gap: .75rem;
 }
 
-.footer__link{
+.footer__link {
     color: var(--text-color);
     transition: color .3s;
 }
 
-.footer__link:hover{
+.footer__link:hover {
     color: var(--first-color);
 }
 
-.footer__group{
+.footer__group {
     margin-top: 5rem;
     justify-items: center;
     row-gap: 2rem;
 }
 
-.footer__social{
+.footer__social {
     column-gap: 1.25rem;
 }
 
-.footer__social-link{
+.footer__social-link {
     display: inline-flex;
     padding: .35rem;
     background-color: var(--first-color);
@@ -935,16 +935,16 @@ footer__link{
     transition: background .4s;
 }
 
-.footer__social-link:hover{
+.footer__social-link:hover {
     background-color: var(--first-color-dark);
 }
 
-.footer__copy{
+.footer__copy {
     font-size: var(--smaller-font-size);
     color: var(--text-color-light);
 }
 
-.footer__message{
+.footer__message {
     position: absolute;
     transform: translateY(1rem);
 }
