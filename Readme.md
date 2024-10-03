@@ -2,6 +2,7 @@ GymWebsite
 Welcome to the GymWebsite project! This is a comprehensive web application designed to provide users with information about our gym facilities, classes, membership plans, and more.
 
 Team Members
+
 [Ritesh bansal]  
 [Rohit kumar yadav]  
 [Mayank shrivastav]  
